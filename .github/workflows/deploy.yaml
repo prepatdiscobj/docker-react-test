@@ -17,7 +17,7 @@
             run: zip -r deploy.zip . -x '*.git*'
      
           - name: Deploy to EB
-            uses: whiz4kid/beanstalk-deploy@v18
+            uses: prepatdiscobj/docker-react-test
             with:
               aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
               aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
